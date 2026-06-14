@@ -1,0 +1,137 @@
+.game-lobby {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  overflow-y: auto;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background-color: rgba(255, 0, 110, 0.3);
+  color: #ff006e;
+  border: 1px solid #ff006e;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.back-btn:hover {
+  background-color: rgba(255, 0, 110, 0.5);
+}
+
+.game-lobby h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #ff006e;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px rgba(255, 0, 110, 0.3);
+}
+
+.lobby-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lobby-section {
+  margin-bottom: 50px;
+}
+
+.lobby-section h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff006e;
+  padding-bottom: 10px;
+}
+
+.mode-grid,
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.mode-card,
+.character-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 0, 110, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-card:hover,
+.character-card:hover {
+  border-color: #ff006e;
+  box-shadow: 0 0 15px rgba(255, 0, 110, 0.3);
+}
+
+.mode-card.active,
+.character-card.active {
+  border-color: #ff006e;
+  background: rgba(255, 0, 110, 0.1);
+  box-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
+}
+
+.mode-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.mode-name,
+.char-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff006e;
+  margin-bottom: 8px;
+}
+
+.mode-players,
+.char-ability {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.char-description {
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.lobby-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ff006e;
+  border-radius: 8px;
+}
+
+.searching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.searching p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn-play-large {
+  padding: 18px 50px;
+  font-size: 20px;
+  background-color: #ff006e;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 0, 110, 0.4);
+}
+
+.btn-play-large:hover {
+  background-color: #ff1493;
+  box-shadow: 0 0 25px rgba(255, 0, 110, 0.6);
+}
